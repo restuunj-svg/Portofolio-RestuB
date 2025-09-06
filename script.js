@@ -4,7 +4,7 @@ var robotAnim = lottie.loadAnimation({
   renderer: "svg",
   loop: true,
   autoplay: true,
-  path: "/assets/waving.json"
+  path: "assets/waving.json"
 });
 
 // Tombol navigasi
