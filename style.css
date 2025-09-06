@@ -1,0 +1,128 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body, html {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  font-family: "Comic Sans MS", cursive, sans-serif;
+}
+
+.slide {
+  position: absolute;
+  top: 0; left: 0;
+  width: 100%;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background: #fff;
+  transition: transform 0.6s ease, opacity 0.6s ease;
+}
+
+.slide.active {
+  display: flex;
+}
+
+.bg {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+/* Robot dan bubble */
+.robot-container {
+  position: absolute;
+  bottom: 10%;
+  right: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#robot {
+  width: 200px;
+  height: 200px;
+}
+
+.chat-bubble {
+  margin-top: 10px;
+  background: #fff;
+  border: 2px solid #000;
+  border-radius: 15px;
+  padding: 10px 15px;
+  font-size: 1rem;
+  max-width: 220px;
+  text-align: center;
+  box-shadow: 3px 3px 0px #000;
+}
+
+/* Tombol */
+#seeBtn {
+  position: absolute;
+  left: 5%;
+  bottom: 8%; /* sesuai lantai background */
+  background: #ffeb3b;
+  border: 2px solid #000;
+  border-radius: 25px;
+  padding: 15px 30px;
+  font-size: 1.2rem;
+  cursor: pointer;
+  box-shadow: 3px 3px 0px #000;
+  transition: transform 0.2s;
+}
+#seeBtn:hover {
+  transform: scale(1.05);
+}
+
+
+/* Slide 2 */
+.slide2 {
+  background: #fdfdfd;
+  flex-direction: column;
+  padding-top: 10px;
+}
+
+.top-bar {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+#backBtn {
+  width: 40px;
+  cursor: pointer;
+}
+
+.portfolio-container {
+  width: 90%;
+  height: 85%;
+  margin-top: 60px;
+}
+.portfolio-container iframe {
+  width: 100%;
+  height: 100%;
+  border: 2px solid #000;
+  border-radius: 15px;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  #robot {
+    width: 120px;
+    height: 120px;
+  }
+  .chat-bubble {
+    font-size: 0.8rem;
+    max-width: 150px;
+  }
+  #seeBtn {
+    font-size: 1rem;
+    padding: 12px 20px;
+  }
+}

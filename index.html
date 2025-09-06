@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta property="og:title" content="My Portfolio" />
+  <meta property="og:description" content="Welcome to my portfolio website" />
+  <meta property="og:image" content="preview.png" />
+  <meta property="og:type" content="website" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.4/lottie.min.js"></script>
+</head>
+<body>
+  <!-- Slide 1 -->
+  <div class="slide slide1 active">
+    <img src="assets/bg-pattern.png" alt="Background" class="bg"/>
+
+    <div class="robot-container">
+      <div id="robot"></div>
+      <div class="chat-bubble">
+        Hi, Welcome. <br/>Would you like to get to know me better?
+      </div>
+    </div>
+
+    <button id="seeBtn">I want to see</button>
+  </div>
+
+  <!-- Slide 2 -->
+  <div class="slide slide2">
+    <div class="top-bar">
+      <img src="assets/left-arrow.png" alt="Back" id="backBtn"/>
+    </div>
+    <div class="portfolio-container">
+      <iframe src="portofolio.pdf"></iframe>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
